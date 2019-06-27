@@ -11,7 +11,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id !== "ID حقك") return;
+  if (message.author.id !== "551156523800461313") return;
 
   
   if (message.content.startsWith(prefix + 'setwatch')) {
@@ -44,7 +44,7 @@ if (message.content.startsWith(prefix + 'setT')) {
      console.log('test' + argresult);
     message.channel.sendMessage(`Streaming: **${argresult}`)
 } 
-if (message.content.startsWith(prefix + 'setgame')) {
+if (message.content.startsWith(prefix + '!pb')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
     message.channel.sendMessage(`Playing: **${argresult}`)
